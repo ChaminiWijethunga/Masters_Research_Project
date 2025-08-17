@@ -7,7 +7,9 @@ library(ggplot2) # for plotting
 # LOAD AND PREPARE DATA ######################################################
 
 # Load your data
-data_wide <- read.csv(file.choose(), row.names = 1, check.names = FALSE)
+data_wide <- read.csv(file.choose(),
+                      row.names = 1, # cultivar IDs in first column becomes row names
+                      check.names = FALSE) # column names stays the same
 
 # Convert row names to a column "cultivar"
 data_wide <- data_wide %>%
@@ -18,7 +20,7 @@ data_wide <- data_wide %>%
 # Convert wide to long format
 data_long <- data_wide %>%
   pivot_longer( # turns columns for each day into rows
-    cols = -Cultivar,
+    cols = -Cultivar, # gather all column except cultivar ID column
     names_to = "Day", # column name for days
     values_to = "Score" # values for each cultivar at the day
   ) %>%
