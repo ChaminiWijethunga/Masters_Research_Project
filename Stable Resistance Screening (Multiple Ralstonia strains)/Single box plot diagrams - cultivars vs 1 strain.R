@@ -74,6 +74,7 @@ ggplot(data_SL1931, aes(x = Cultivar, y = Wilt_Rate, fill = Pathogen)) + # assig
   labs(title = "Wilt Rate % of cultivars vs SL1931 strain", # labels
        x = "Cultivar",
        y = "Wilt Rate (%)") +
+  scale_y_continuous(limits = c(0, 100)) +   # force y-axis from 0–100
   theme_classic(base_size = 14) + # how the plot appear
   theme(
     axis.line = element_line(color = "black"),               # Axis lines in black
