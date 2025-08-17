@@ -18,7 +18,7 @@ The repository focuses on **data visualization and analysis**, including disease
 1. **Disease Progression (61 pepper germplasms, Ralstonia strain SL1931)**  
    - Line graphs with two different aesthetics for comparison and presenting.
 
-2. **Clustering Analysis**  
+2. **Clustering Analysis & Heat map**  
    - Dendrogram of cultivars based on resistance levels.  
    - Heatmap of disease severity distribution.  
 
