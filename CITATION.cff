@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "WIJETHUNGA"
+  given-names: "CHAMINI"
+  orcid: "https://orcid.org/0009-0002-3616-2004"
+title: "Masters Research Project R Code: Evaluation of Extreme Resistance to Bacterial Wilt Diseases in Capsicum spp."
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2025-08-17
+url: "https://github.com/ChaminiWijethunga/Masters_Research_Project"
